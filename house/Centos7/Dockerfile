@@ -4,10 +4,10 @@
 #
 # Dockerizing CentOS7: Dockerfile for building CentOS images
 #Thank for 
-FROM       centos:centos7.1.1503
+FROM       centos:7.1.1503
 MAINTAINER Tinding <3055521499@qq.com>
 
-cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 #ENV TZ "Asia/Shanghai"
 ENV TERM xterm
 
