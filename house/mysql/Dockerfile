@@ -17,6 +17,7 @@ ADD mysqld_charset.cnf /etc/my.cnf.d/
 
 COPY scripts /scripts
 RUN chmod +x /scripts/start
+RUN chmod +x /scripts/firstrun_maria
 
 EXPOSE 3306
 
